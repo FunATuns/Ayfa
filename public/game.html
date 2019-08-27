@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayfa</title>
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles/lgn.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
 </head>
-<body>
-  <h1>Ayfa</h1>
-  <input id="user" placeholder="Username" type="text" >
-  <p id="noname">Please enter a username!</p>
-  <button onclick="startGame()">Start</button>
+<body onload="starting()">
+  <section class="page" id="stats">
+    <section id="leaderboard"></section>
+    <section id="food">
+      <object type="image/svg+xml" data="icons/meat.svg"></object>
+      <div id="wrapfood">
+        <p>Food</p>
+        <div id="foodbox">0</div>
+      </div>
+      <object type="image/svg+xml" data="icons/cheers.svg"></object>
+    </section>
+    <section id="strength"></section>
+    <section id="up1"></section>
+    <section id="up2"></section>
+  </section>
+  <section class="page" id="encounter"></section>
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>

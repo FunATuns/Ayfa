@@ -1,3 +1,12 @@
+/* COLOR SCHEME 
+#FFFFFF - White
+#00A7E1 - Light blue
+#30332E - Gray
+#809848 - Pastel Green
+#000000 - Black
+*/
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +34,15 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #00A7E1;
+	color: white;
+	overflow: hidden;
+	white-space: nowrap;
+	font-family: 'Asap', sans-serif;
+	-webkit-appearance:none !important;
+}
+body * {
+	-webkit-appearance:none !important;
 }
 ol, ul {
 	list-style: none;
@@ -42,14 +60,16 @@ table {
 	border-spacing: 0;
 }
 
-body, h1, h2, h3, h4, h5, h6, p {
-  overflow:hidden;
-  display: block;
-  margin:0;
-  padding:0;
-  /*font-family: 'Righteous', cursive;*/
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #D7B78D;
+.page {
+  width: 100%;
+  display: inline-block;
+}
 
-  background-color: #0F0D0E;
+object {
+  width: 200px;
+  color: white;
+}
+
+@media (max-width: 450px) {
+  
 }
