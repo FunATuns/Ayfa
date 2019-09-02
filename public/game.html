@@ -11,19 +11,48 @@
 </head>
 <body onload="starting()">
   <section class="page" id="stats">
-    <section id="leaderboard"></section>
-    <section id="food">
-      <object type="image/svg+xml" data="icons/meat.svg"></object>
-      <div id="wrapfood">
-        <p>Food</p>
-        <div id="foodbox">0</div>
-      </div>
-      <object type="image/svg+xml" data="icons/cheers.svg"></object>
+    <div id="pagewrapper">
+      <section id="leaderboard">
+          <table class="unstyledTable">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Food</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bob</td>
+                  <td>542623567</td>
+                </tr>
+                <tr>
+                  <td>Brobert</td>
+                  <td>2456</td>
+                </tr>
+                <tr>
+                  <td>Brobette</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Bo</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+              </table>
+      </section>
+      <section id="food">
+        <object type="image/svg+xml" data="icons/meat.svg"></object>
+        <div id="wrapfood">
+          <p>Food</p>
+          <div id="foodbox">0</div>
+        </div>
+        <object type="image/svg+xml" data="icons/cheers.svg"></object>
+      </section>
+      <section id="strength"></section>
+      <section id="up1"></section>
+      <section id="up2"></section>
     </section>
-    <section id="strength"></section>
-    <section id="up1"></section>
-    <section id="up2"></section>
-  </section>
+  </div>
   <section class="page" id="encounter"></section>
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

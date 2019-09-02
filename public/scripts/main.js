@@ -1,5 +1,7 @@
 // Connection url
-var socket = io.connect("http://141.126.155.58:7777");
+//var socket = io.connect("http://127.0.0.1:7777");
+
+//141.126.155.58
 
 /*
   // Example of Socket Emit

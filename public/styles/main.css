@@ -62,12 +62,26 @@ table {
 
 .page {
   width: 100%;
-  display: inline-block;
+	display: inline-block;
+	height: 100vh;
+	overflow-y: scroll;
 }
 
 object {
   width: 200px;
   color: white;
+}
+
+#pagewrapper {
+	display: block;
+	margin: 5vh auto;
+	position: relative;
+	width: 70%;
+}
+
+#leaderboard {
+	width: 50%;
+	display: block;
 }
 
 @media (max-width: 450px) {
